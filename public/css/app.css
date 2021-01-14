@@ -1,0 +1,369 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html
+{
+    background-color: whitesmoke;
+}
+header
+{
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+section
+{
+    margin-left: 300px;
+}
+.container_logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.logo
+{
+    font-weight: bolder;
+    font-size: 2em;
+    width: 50%;
+    height: 100px;
+    color: tomato;
+    text-align: right;
+    font-style: italic;
+}
+.logo span
+{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: black;
+    font-style: normal;
+}
+.menu
+{
+    margin-bottom: 300px;
+    margin-top: 100px;
+}
+.immobilier .titre
+{
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.immobilier:hover .tomato
+{
+    display: unset;
+    animation: width 0.6s forwards;
+    transition: 0.5s;
+}
+.immobilier:hover ul
+{
+    display: unset;
+}
+.acceuil
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.acceuil a
+{
+    text-decoration: none;
+    color: unset;
+    font-weight: bolder;
+}
+.tomato
+{
+    height: 5px;
+    width: 40px;
+    background-color: tomato;
+    display: none;
+}
+.tomato_small
+{
+    height: 3px;
+    width: 25px;
+    background-color: tomato;
+    display: none;
+}
+.immobilier  ul li
+{
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: oblique;
+}
+ul
+{
+    display: none;
+}
+.immobilier li:hover .tomato_small
+{
+    display: unset;
+    animation:  width2 0.5s;
+    transition: 0.5s;
+}
+.bienvenue
+{
+    padding: 100px;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articles
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% 40% 40% 40%;
+    justify-content: space-around;
+}
+.article
+{
+    height: 450px;
+    width: 350px;
+    border: 1px solid grey;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 200px;
+}
+.article img
+{
+    width: 100%;
+    height: 100%;
+}
+.noir
+{
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    opacity: 0.2;
+    z-index: 2;
+}
+.article:hover .noir
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 100px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.article button
+{
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background-color: tomato;
+    border: 1px solid tomato;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    top: 350px;
+    left: 200px;
+    transform: translateX(50px);
+    visibility: hidden;
+    opacity: 0.9;
+    z-index: 1;
+
+}
+.article:hover button
+{
+    visibility: unset;
+    transform: translateX(-100px);
+    transition: 0.5s 0.5s;
+}
+.presentation_produit
+{
+    margin-left:300px;
+    display: flex;
+    justify-content: space-between;
+}
+.img_produit
+{
+    height: 100vh;
+    width: 45vw;
+}
+.presentation_produit img
+{
+    width:100% ;
+    height: 100%;
+}
+.description
+{
+    width: 400px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.description h1
+{
+    text-align: end;
+    font-size: 50px;
+    color: tomato;
+}
+.description p
+{
+    font-size: 25px;
+    line-height: 35px;
+}
+.description a
+{
+    text-decoration: none;
+}
+.description button
+{
+    position:absolute;
+    height: 50px;
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    border: 1px solid tomato;
+    transition: 0.4s 0.1 ease;
+}
+.description .button_hide
+{
+    height: 45px;
+    width: 195px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid tomato;
+}
+.description button:hover
+{
+    background-color: white;
+    border: 2px solid tomato;
+    color: tomato;
+    transform: translate(5px,-5px);
+    -webkit-transform: translate(5px,-5px);
+    -moz-transform: translate(5px,-5px);
+    -ms-transform: translate(5px,-5px);
+    -o-transform: translate(5px,-5px);
+    transition: 0.4s 0.1s ease ;
+    -webkit-transition: 0.4s 0.1s ease ;
+    -moz-transition: 0.4s 0.1s ease ;
+    -ms-transition: 0.4s 0.1s ease ;
+    -o-transition: 0.4s 0.1s ease ;
+}
+.sec_ticket
+{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket
+{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    box-shadow: .5px .5px 5px;
+}
+.ticket .logo
+{
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+}
+.ticket .entete
+{
+    margin-left: 250px;
+}
+.ticket table
+{
+    font-size: 20px;
+    margin: auto ;
+    height: 200px;
+    width: 300px;
+    margin-top: 60px;
+}
+.ticket table th
+{
+    color: tomato;
+    text-align: start;
+    padding: 20px;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    border: 1px solid tomato;
+    color: tomato;
+}
+.lien_acceuil
+{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    padding: 100px;
+}
+@keyframes width
+{
+    0%
+    {
+        width: 2px;
+    }
+    100%
+    {
+        width: 40px;
+    }
+}
+@keyframes width2
+{
+    0%
+    {
+        width: 2px;
+    }
+    100%
+    {
+        width: 25px;
+    }
+}
+@keyframes height
+{
+    0%
+    {
+        height: 400px;
+    }
+    100%
+    {
+        height: 100px;
+    }
+}
